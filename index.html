@@ -1,0 +1,62 @@
+ 
+<html>
+  <head>
+    <title>Emotion To Emoji</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+        <h2 class="header">𝕨𝕙𝕒𝕥 𝕖𝕞𝕠𝕛𝕚 𝕒𝕣𝕖 𝕪𝕠𝕦<br><span>&#128522;</span> <span>&#128512;</span> <span>&#128532;</span> <span>&#128546;</span> <span>&#128545;</span> <span>&#128548;</span></h2>
+      <br><br>
+
+      <p style="font-size: 26px; color:rgb(233, 209, 179);">𝕥𝕒𝕜𝕖 𝕒 𝕤𝕖𝕝𝕗𝕚𝕖 𝕒𝕟𝕕 𝕤𝕖𝕖 𝕨𝕙𝕒𝕥 𝕖𝕞𝕠𝕛𝕚 𝕪𝕠𝕦 𝕒𝕣𝕖
+      	<br>
+      </p>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+      <label class="labelweb" style="color:rgb(233, 209, 179);">𝕨𝕖𝕓𝕔𝕒𝕞</label>
+      <div id="webcam">
+      </div>
+      <label class="button" onclick="takesnapshot()">𝕥𝕒𝕜𝕖 𝕤𝕟𝕒𝕡𝕤𝕙𝕠𝕥</label>
+    </div>
+    <div class="col-md-4 col-sm-12 col-xs-12" style="margin-top:20px;">
+    <label class="label" style="color:rgb(233, 209, 179);">𝕡𝕣𝕖𝕕𝕚𝕔𝕥𝕚𝕠𝕟 𝟙 </label> 
+    <p class="emotion_name" id="result_emotion_name"></p> 
+    <p class="emoji" id="update_emoji"></p>
+    <br><br><br>
+     <label class="label"style="color:rgb(233, 209, 179);">𝕡𝕣𝕖𝕕𝕚𝕔𝕥𝕚𝕠𝕟 𝟚 </label> 
+     <p class="emotion_name" id="result_emotion_name2"></p> 
+     <p class="emoji" id="update_emoji2"></p>
+    </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label class="labelsnap" style="color:rgb(233, 209, 179);">𝕤𝕟𝕒𝕡𝕤𝕙𝕠𝕥</label>
+        <div id="snapshot">
+        </div>
+        <label class="button" onclick="analyzesnapshot()">𝕒𝕟𝕒𝕝𝕪𝕫𝕖 𝕤𝕟𝕒𝕡𝕤𝕙𝕠𝕥</label>
+      </div>
+        <br><br>
+
+
+
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
